@@ -1,0 +1,211 @@
+/* --------------- proccess styles --------------- */
+.process.style-12{
+    .process-card{
+        padding: 40px;
+        text-align: center;
+        display: block;
+        border-top: 1px solid transparent;
+        border-radius: 10px;
+        color: #fff;
+        &:hover{
+            background-color: #0e0d11;
+            border-top: 1px solid var(--color-yellowGreen);
+        }
+        .icon{
+            height: 80px;
+            margin-bottom: 30px;
+            img{
+                height: 80px;
+            }
+        }
+        .info{
+            h6{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #89888f;
+            }
+            .step{
+                font-size: 14px;
+                color: var(--color-yellowGreen);
+                text-transform: uppercase;
+                font-weight: 200;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+/* --------------- proccess style 16 --------------- */
+.process.style-16 {
+    position: relative;
+    padding: 120px 0;
+
+    .title {
+        position: relative;
+        font-size: 70px;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 1px #0009;
+        text-transform: capitalize;
+        .solid-txt {
+            color: #111;
+        }
+    }
+
+    .steps {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 175px;
+            width: 100%;
+            height: 1px;
+            background-color: #9994;
+        }
+        .item {
+            position: relative;
+            margin-top: 50px;
+            text-align: center;
+            .title-wrapper {
+                position: relative;
+                padding-bottom: 30px;
+                min-height: 125px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: calc(50% - 10px);
+                    bottom: -10px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: var(--color-orange4);
+                }
+                .num {
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    color: var(--color-orange4);
+                }
+                .item-title {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            .text {
+                font-size: 16px;
+                color: #666;
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+
+/* --------------- process st17 --------------- */
+.tc-process-st17 {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+
+    .lg-title {
+        position: relative;
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+
+    .process-card {
+        position: relative;
+        text-align: center;
+        .num {
+            position: relative;
+            font-size: 70px;
+            font-weight: bold;
+            width: 75px;
+            height: 75px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            color: #f0f0f0;
+            background-color: #fff;
+            z-index: 10;
+        }
+        h4 {
+            font-size: 30px;
+        }
+        .text {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+    }
+
+    .cards {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 130px;
+            top: 37px;
+            width: calc(100% - 273px);
+            height: 1px;
+            background-color: #9995;
+            z-index: -1;
+        }
+        .row {
+            .col-lg-3 {
+                &:nth-of-type(even) {
+                    .process-card {
+                        padding-top: 120px;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            left: 50%;
+                            top: 37px;
+                            width: 1px;
+                            height: 73px;
+                            background-color: #9995;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    .row {
+        .col-lg-3 {
+            .process-card {
+                padding-top: 120px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    top: 37px;
+                    width: 1px;
+                    height: 73px;
+                    background-color: #9995;
+                }
+            }
+            &:first-of-type {
+                .process-card {
+                    padding-top: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

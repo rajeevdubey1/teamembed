@@ -1,0 +1,84 @@
+
+
+
+/* --------------- solutions styles --------------- */
+.solutions.style-10{
+    .solution-card{
+        display: flex;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        h6{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .icon{
+            img{
+                filter: invert(54%) sepia(58%) saturate(5618%) hue-rotate(228deg) brightness(99%) contrast(92%);
+            }
+        }
+        &:hover{
+            background-color: #8169f1;
+            color: #fff;
+            box-shadow: 10px 10px 30px #0004;
+            .icon{
+                img{
+                    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(135deg) brightness(107%) contrast(106%);
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------- solutions style 16 --------------- */
+.solutions.style-16 {
+    position: relative;
+    .content-card {
+        position: relative;
+        padding: 80px 80px 0;
+        background: linear-gradient(180deg, rgba(236, 99, 38, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+        border-radius: 50px;
+        .img {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 700px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info {
+            .icon-list {
+                position: relative;
+                .item {
+                    position: relative;
+                    display: flex;
+                    margin-top: 30px;
+                    .icon {
+                        position: relative;
+                        width: 32px;
+                        height: 32px;
+                        margin-inline-end: 20px;
+                        flex-shrink: 0;
+                        top: 8px;
+                    }
+                    h6 {
+                        font-size: 24px;
+                        margin-bottom: 5px;
+                    }
+                    .text {
+                        font-size: 16px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+

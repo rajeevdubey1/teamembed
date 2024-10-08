@@ -1,0 +1,119 @@
+
+
+
+/* --------------- contact page styles --------------- */
+.contact-page.style-5{
+    .contact.style-6 .form-group .form-control:focus, .contact.style-6 .form-group .form-select:focus{
+        border-color: var(--color-blue5);
+    }
+    .map{
+        iframe{
+            width: 100%;
+            margin-bottom: -6px;
+        }
+    }
+}
+
+
+/* --------------- contact form style13 --------------- */
+.tc-contact-st13 {
+    position: relative;
+    z-index: 20;
+    .contact-info {
+        position: relative;
+        padding: 20px 50px;
+        border: 1px solid #9995;
+        border-radius: 30px;
+        .item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin-inline-end: 20px;
+                flex-shrink: 0;
+            }
+            .cont {
+                small {
+                    font-size: 13px;
+                    color: #666;
+                }
+                .text {
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .contact-form {
+        position: relative;
+        padding: 50px;
+        border-radius: 30px;
+        background-image: url(../img/form_bg12.jpg);
+        background-size: cover;
+        overflow: hidden;
+        .form-group {
+            position: relative;
+            margin-top: 20px;
+            .icon {
+                position: absolute;
+                left: 0;
+                top: 15px;
+                z-index: 10;
+            }
+            .form-control {
+                position: relative;
+                border: 0;
+                border-bottom: 1px solid #9994;
+                border-radius: 0;
+                background-color: transparent;
+                font-size: 14px;
+                padding: 15px;
+                padding-inline-start: 30px;
+                &::placeholder {
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------- tc-map-st13 --------------- */
+.tc-map-st13 {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    margin-top: -100px;
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #fff, transparent, #fff);
+        z-index: 10;
+        pointer-events: none;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #fff, transparent, #fff);
+        z-index: 10;
+        pointer-events: none;
+    }
+    .map {
+        object-fit: cover;
+        margin-bottom: -6px;
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+}
+
